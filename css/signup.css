@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+
+@media screen and (min-width: 0px) and (max-width: 2000px) {
+	/* 共通 */
+	body {
+		font-family: 'Noto Sans JP', sans-serif;
+	}
+
+	#wrap {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	/* header */
+	header {
+		position: relative;
+		max-width: 760px;
+		height: 270px;
+		margin: 0 auto;
+	}
+
+	.sign-up {
+		text-align: left;
+		/* margin:50px auto; */
+		width: 100%;
+		color: black;
+		/* font-family: "ヒラギイノ明朝　ProN W3", "Hiragino Mincho ProN"; */
+		font-size: 3vw;
+		font-weight: bold;
+		text-decoration: none;
+		position: absolute;
+		top: 50%;
+		/* left: 50%; */
+		transform: translate(0, -50%);
+	}
+
+	.sign-up1 {
+		text-align: center;
+		/* margin:50px auto; */
+		width: 100%;
+		color: black;
+		/* font-family: "ヒラギイノ明朝　ProN W3", "Hiragino Mincho ProN"; */
+		font-size: 3vw;
+		font-weight: bold;
+		text-decoration: none;
+		position: absolute;
+		top: 50%;
+		/* left: 50%; */
+		transform: translate(0, -50%);
+	}
+
+	.link {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		top: 80%;
+		right: 0%;
+	}
+
+	.link li {
+		/* width: 140px; */
+		/* text-align: center; */
+		padding-left: 40px;
+		padding-right: 40px;
+		/* text-align: right; */
+	}
+
+	.link li a {
+		text-decoration: none;
+		font-size: 19px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	/* content */
+	.content {
+		max-width: 500px;
+		margin: 0 auto 50px auto;
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	.frame {
+			width: 90%;
+			margin: 0 auto;
+			padding: 15px;
+			background-color: #EEEEEE;
+			border-radius: 10px;
+	}
+
+	.attention {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+
+	dt {
+		font-size: 18px;
+	}
+
+	dt span {
+		font-size: 12px;
+		color: red;
+		margin-left: 5px;
+	}
+
+	dd {
+		margin-bottom: 15px;
+		margin-inline-start: 0px;
+	}
+
+	.fill-out {
+		font-size: 18px;
+	}
+
+	.overcome {
+		top: -2px;
+		position: relative;
+	}
+
+	dd .error {
+		color: red;
+	}
+
+	img {
+		width:70px;
+		height:70px;
+		object-fit:cover;
+		border-radius:50%;
+		/* object-position:-20px 0px; */
+		border: 2px solid #000;
+	}
+
+	.finish {
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.link3 {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		/* position: absolute;
+		top: 80%;
+		right: 0%; */
+	}
+
+	.link3 .login {
+		/* width: 140px; */
+		/* text-align: center; */
+		padding-left: 40px;
+		/* text-align: right; */
+	}
+
+	.link3 li a {
+		text-decoration: none;
+		font-size: 25px;
+	}
+
+	.rule {
+		font-size: 20px;
+	}
+
+	.conform {
+		font-size: 20px;
+		margin-top: 40px;
+		margin-left: 10px;
+	}
+
+	/* footer */
+	.footer {
+		max-width: 960px;
+		margin: 50px auto;
+		text-align: center;
+	}
+
+	.footer2 {
+		max-width: 960px;
+		margin: 100px auto 50px;
+		text-align: center;
+		
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wrap {
+		width: 300px;
+		margin: 0 auto;
+	}
+	/* header */
+	header {
+		position: relative;
+		max-width: 300px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.sign-up {
+		text-align: center;
+		/* margin:50px auto; */
+		width: 100%;
+		color: black;
+		/* font-family: "ヒラギイノ明朝　ProN W3", "Hiragino Mincho ProN"; */
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		position: absolute;
+		top: 40%;
+		/* left: 50%; */
+		transform: translate(0, -50%);
+	}
+
+	.link {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		top: 80%;
+		right: 0%;
+	}
+
+	.link li {
+		/* width: 140px; */
+		/* text-align: center; */
+		padding-left: 40px;
+		padding-right: 40px;
+		/* text-align: right; */
+	}
+
+	.link li a {
+		text-decoration: none;
+		font-size: 25px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.content {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	form {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.attention {
+		font-size: 20px;
+	}
+
+	textarea {
+		font-size: 10px;
+	}
+
+	.finish {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}

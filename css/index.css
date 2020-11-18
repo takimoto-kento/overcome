@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+@media screen and (min-width: 0px) and (max-width: 2000px) {
+	/* 共通 */
+	body {
+		font-family: 'Noto Sans JP', sans-serif;
+		width: 100%;
+		background-color: #fff;
+	}
+
+	.top {
+		margin-top: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	/* header */
+	/* header {
+		position: relative;
+		width: 100%;
+		height: 270px;
+		margin: 0 auto;
+		border-bottom: solid 2px #C0C0C0;
+	} */
+
+	.na {
+		width: 100%;
+		background-color: #EEEEEE;
+		border-bottom: solid 2px #C0C0C0; 
+	}
+
+	/* content */
+	.content {
+		/* max-width: 800px; */
+		background-color: #fff;
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		border-left: solid 2px #C0C0C0;
+		border-right: solid 2px #C0C0C0;
+		/* justify-content: space-between; */
+	}
+
+	.post-page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 250px;
+		border-bottom: solid 2px #C0C0C0;
+		color: black;
+		font-size: 3vw;
+		font-weight: bold;
+	}
+
+	.link {
+		list-style: none;
+		/* display: flex; */
+		/* justify-content: flex-end; */
+		/* position: absolute; */
+		/* top: 80%; */
+		/* right: 0%; */
+	}
+
+	.link li {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.link li a {
+		text-decoration: none;
+		font-size: 19px;
+		font-weight: bold;
+	}
+
+	aside {
+		width: 35%;
+		padding-top: 20px;
+		padding-left: 5px;
+		border-right: solid 2px #C0C0C0;
+		/* margin-left: auto; */
+	}
+
+	article {
+		width: 65%;
+		/* margin-right: auto; */
+		/* border-right: solid 2px #C0C0C0; */
+	}
+
+	.post {
+		border-bottom: solid 5px #C0C0C0;
+	}
+
+	img {
+		width:70px;
+		height:70px;
+		object-fit:cover;
+		border-radius:50%;
+		/* object-position:-20px 0px; */
+		border: 2px solid #000;
+	}
+
+	.message {
+		margin-top: 15px;
+	}
+
+	textarea {
+		font-size: 20px;
+		border: 0;
+		/* white-space: pre; */
+	}
+
+	.submit {
+		text-align: right;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+
+	.submit2 {
+		font-size: 13px;
+		display: inline-block;
+		padding: 0.5em 1em;
+		text-decoration: none;
+		background: #fff;/*ボタン色*/
+		color: #000;
+		border-bottom: solid 4px #000;
+		border-radius: 30px;
+	}
+
+	.submit2:active {
+		/*ボタンを押したとき*/
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);/*下に動く*/
+		border-bottom: none;/*線を消す*/
+	}
+
+	/* .submit2 {
+		font-size: 20px;
+		border-radius: 30px;
+		padding: 5px 7px;
+	} */
+
+	.message {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: solid 1px #C0C0C0;
+	}
+
+	.mes-pic {
+		width: 15%;
+		margin-left: 5px;
+		margin-bottom: 10px;
+		/* display: inline-block; */
+	}
+
+	.mes-con {
+		/* width: 200px;  */
+		width: 85%;
+		/* display: inline-block; */
+		/* text-align: right; */
+	}
+
+	.name {
+		font-size: 17px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.mes {
+		font-size: 15px;
+		margin-bottom: 3px;
+		/* white-space: pre; */
+	}
+
+	.re {
+		font-size: 13px;
+	}
+
+	.day {
+		font-size: 13px;
+	}
+
+	.del {
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+
+	/* article .hr {
+		border-right: solid 1px #C0C0C0;
+		width: 100%;
+		margin-bottom: 0;
+		margin-block-start: 1em;
+		margin-block-end: 0em;
+	} */
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 150px;
+		color: black;
+		font-size: 1.0rem; 
+	}
+
+	small {
+		display: block;
+		text-align: center;
+		/* 1.0rem = 16px */
+		font-size: 1.0rem;
+		/* display: inline-block; */
+	}
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+	.post-page {
+		height: 100px;
+		border-bottom: none;
+	}
+
+	header h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.content {
+		display: block;
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 0;
+		padding-left: 0;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	.link {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	li {
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+
+	.message {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: solid 1px #C0C0C0;
+	}
+
+	.mes-pic {
+		width: 30%;
+		margin-left: 15px;
+		margin-bottom: 10px;
+		/* display: inline-block; */
+	}
+
+	.mes-con {
+		/* width: 200px;  */
+		width: 70%;
+		/* display: inline-block; */
+		/* text-align: right; */
+	}
+
+}
